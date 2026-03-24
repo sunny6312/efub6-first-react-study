@@ -3,17 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";;
-
 import Library from './chapter_03/Library';
 import Clock from './chapter_04/Clock';
-setInterval(() =>{
-  ReactDOM.render(
-    <React.StrictMode>
-      <Clock />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
-}, 1000);
 import CommentList from './chapter_05/CommentList';
 import NotificationList from './chapter_06/NotificationList';
 import Accommodate from './chapter_07/Accommodate';
@@ -26,11 +17,11 @@ import ProfileCard from './chapter_13/ProfileCard';
 import DarkOrLight from './chapter_14/DarkOrLight';
 import Blocks from './chapter_15/Blocks';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <NotificationList/>
-      </React.StrictMode>,
+    <Accommodate />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
